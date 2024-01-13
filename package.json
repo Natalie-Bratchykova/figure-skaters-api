@@ -1,0 +1,16 @@
+{
+  "name": "figure-skater-api",
+  "version": "1.0.0",
+  "description": "API for getting information about figure skaters",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nataliia Bratchykova",
+  "license": "ISC",
+  "dependencies": {
+    "consign": "^0.1.6",
+    "express": "^4.18.2"
+  }
+}
