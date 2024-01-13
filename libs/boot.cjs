@@ -1,3 +1,8 @@
 module.exports = app =>{
-    app.listen(app.get("port"))
+    // set sequelize settings should be done
+    // before the server starts
+    app.db.sync().then(()=>{
+        app.listen(app.get("port"))
+    })
+    
 }
