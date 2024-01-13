@@ -7,11 +7,11 @@ const port = 2900;
 const app = express();
 
 // use consign to include all needed data to app
-consign()
-  .include("models") // include load files and directories
-  .then("libs/middlewares.cjs") // using "then" we can specify order of loads 
+consign().include("db.cjs")// include load files and directories
+  .then("models") // using "then" we can specify order of loads 
+  .then("libs/middlewares.cjs") 
   .then("routes")
   .then("libs/boot.cjs")
   .into(app);
 
-// app.listen(port);
+
