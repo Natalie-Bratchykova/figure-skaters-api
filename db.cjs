@@ -1,5 +1,5 @@
-import { Sequelize } from "sequelize";
-import config from "./libs/config.cjs";
+const Sequelize = require("sequelize")
+const config = require("./libs/config.cjs")
 
 // to make sure that db initialized only once the Singleton pattern is used here
 
