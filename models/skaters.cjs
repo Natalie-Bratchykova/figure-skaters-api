@@ -49,4 +49,6 @@ module.exports = (sequelize, DataType) => {
     }
 
   });
+
+  return skaters;
 };
